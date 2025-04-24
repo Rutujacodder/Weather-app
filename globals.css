@@ -1,0 +1,147 @@
+/* Apply styles globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Weather App container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Input field */
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  transform: scale(1.05);
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Weather info */
+.weather-info {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.weather-info h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.weather-info img {
+  width: 90px;
+  margin-top: 10px;
+}
+
+/* 5-Day Forecast Section */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90px;
+  transition: all 0.3s ease-in-out;
+}
+
+.forecast-item:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.forecast-item img {
+  width: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .weather-info img {
+    width: 75px;
+  }
+}
